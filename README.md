@@ -35,7 +35,6 @@ Clone the repository:
 
 1. Configure your MariaDB database connection in the `application.properties` or `hibernate.cfg.xml` file.
    ```xml
-   <!-- Example for hibernate.cfg.xml -->
    <property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/bookshelve</property>
    <property name="hibernate.connection.username">dbUser</property>
    <property name="hibernate.connection.password">dbPassword</property>
