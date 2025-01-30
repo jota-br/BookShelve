@@ -26,7 +26,7 @@
 
 Clone the repository:
    ```sh
-   git clone https://github.com/jota-br/bookshelf.git
+   git clone https://github.com/jota-br/bookshelve.git
    ```
 
 ### Configuration
