@@ -8,11 +8,11 @@
 
 ## Technologies
 
-- **Java 17**: The programming language used for application development.
-- **JavaFX 17**: The framework used for building the user interface.
-- **MariaDB**: The relational database used for storing data.
-- **JDBC**: Java Database Connectivity for connecting with MariaDB.
-- **Hibernate (JPA)**: Java Persistence API used for mapping Java objects to database tables.
+- **Java 17**
+- **JavaFX 17**
+- **MariaDB**
+- **JDBC**
+- **Hibernate (JPA)**
 
 ## Getting Started
 ### Requirements
