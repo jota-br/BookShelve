@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ostrovski.joao.ui.ControllerBottomBar" alignment="CENTER" spacing="50" fx:id="bottomBarControllerHbox">
+    <FlowPane fx:id="paginationButtonPrevious" alignment="CENTER"/>
+        <Label fx:id="paginationDetails" HBox.hgrow="ALWAYS" minWidth="100"/>
+    <FlowPane fx:id="paginationButtonNext" alignment="CENTER"/>
+</HBox>

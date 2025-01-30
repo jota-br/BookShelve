@@ -1,0 +1,14 @@
+.labelTitle {
+    -fx-font-size:16px;
+    -fx-font-weight: bold;
+}
+
+.labelSubTitle {
+    -fx-font-size:14px;
+    -fx-font-style: italic;
+}
+
+.detailedView {
+    -fx-padding: 15px;
+    -fx-margin: 15px;
+}

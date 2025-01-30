@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ostrovski.joao.ui.ControllerEditDialog" prefWidth="800" prefHeight="600">
+    <headerText>
+        <Label text="%Edit"/>
+    </headerText>
+    <content>
+        <VBox fx:id="editDialogVbox"></VBox>
+    </content>
+</DialogPane>

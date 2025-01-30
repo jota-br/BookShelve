@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="mainBorderPane" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ostrovski.joao.ui.Controller" stylesheets="@css/main.css" styleClass="mainFrame">
+    <top>
+        <VBox styleClass="mainFrameTop" fx:id="mainFrameTop"></VBox>
+    </top>
+    <left>
+        <VBox styleClass="mainFrameLeft" fx:id="mainFrameLeft"></VBox>
+    </left>
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true">
+            <VBox styleClass="mainFrameCenter" fx:id="mainFrameCenter"></VBox>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <VBox styleClass="mainFrameBottom" fx:id="mainFrameBottom"></VBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/fxml/1" styleClass="leftMenuVbox">
+    <Button onAction="#handleEdit">
+        <tooltip>
+            <Tooltip text="%edit_book"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@../imgs/Edit24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button onAction="#handleDelete">
+        <tooltip>
+            <Tooltip text="%delete_book"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@../imgs/Delete24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button onAction="#editAuthor">
+        <tooltip>
+            <Tooltip text="%edit_author"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@../imgs/Edit24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button onAction="#editPublisher">
+        <tooltip>
+            <Tooltip text="%edit_publisher"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@../imgs/Edit24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button onAction="#editCategory">
+        <tooltip>
+            <Tooltip text="%edit_category"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@../imgs/Edit24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+</VBox>

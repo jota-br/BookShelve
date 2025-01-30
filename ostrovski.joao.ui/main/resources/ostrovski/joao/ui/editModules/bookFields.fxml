@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml">
+    <Label text="Title:"/>
+    <TextField fx:id="titleField"/>
+    <Label text="Release Date:"/>
+    <DatePicker fx:id="releaseDateField"/>
+    <Label text="Description:"/>
+    <TextField fx:id="descriptionField"/>
+</VBox>

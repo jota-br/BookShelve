@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="ostrovski.joao.ui.ControllerLeftMenu" spacing="10" alignment="CENTER" fx:id="leftMenuControllerVbox"
+      styleClass="leftMenuVbox">
+    <VBox fx:id="userMenu">
+        <ToggleButton fx:id="viewBookToggleButton" onAction="#openDetailedViewWithSelection">
+            <tooltip>
+                <Tooltip text="%view_book_information"/>
+            </tooltip>
+            <graphic>
+                <ImageView>
+                    <Image url="@../imgs/History24.gif"/>
+                </ImageView>
+            </graphic>
+        </ToggleButton>
+    </VBox>
+    <VBox fx:id="adminMenu" onKeyPressed="#handleDeleteKeyPress"></VBox>
+    <VBox fx:id="adminMenuDetailedView"></VBox>
+</VBox>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ostrovski.joao.ui.ControllerUpsert" fx:id="upsertControllerVbox" stylesheets="@css/main.css" styleClass="upsertCenter">
+    <VBox fx:id="bookVbox" styleClass="vboxPadding">
+        <Label text="%Title" styleClass="header"/>
+        <TextField fx:id="titleField"/>
+        <Label text="%release_date" styleClass="header"/>
+        <DatePicker fx:id="releaseDateField" />
+        <Label text="%Description" styleClass="header"/>
+        <TextArea fx:id="descriptionField"/>
+        <Label text="%Category" styleClass="header"/>
+        <TextField fx:id="categoryNameField" />
+    </VBox>
+    <VBox fx:id="publisherVbox" styleClass="vboxPadding">
+        <HBox>
+            <TextField fx:id="publisherNameField" promptText="%publisher_name"/>
+            <TextField fx:id="publisherCountryField" promptText="%publisher_country_name"/>
+            <Button text="%Add" onAction="#addPublisher"/>
+        </HBox>
+        <HBox>
+            <ChoiceBox fx:id="publisherList" />
+            <Button text="%remove_selected_item" onAction="#removeSelectedPublisher"/>
+        </HBox>
+    </VBox>
+    <VBox fx:id="authorVbox" styleClass="vboxPadding">
+        <HBox>
+            <TextField fx:id="authorNameField" promptText="%author_name"/>
+            <DatePicker fx:id="dateOfBirthField" promptText="%date_of_birth" />
+            <TextField fx:id="authorCountryNameField" promptText="%author_country_name"/>
+            <Button text="%Add" onAction="#addAuthor"/>
+        </HBox>
+        <HBox>
+            <ChoiceBox fx:id="authorList" />
+            <Button text="%remove_selected_item" onAction="#removeSelectedAuthor"/>
+        </HBox>
+    </VBox>
+    <Button text="%Save" onAction="#saveBook" />
+</VBox>

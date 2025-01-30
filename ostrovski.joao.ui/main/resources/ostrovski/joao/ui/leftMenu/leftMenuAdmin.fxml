@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/fxml/1" styleClass="leftMenuVbox">
+    <Button onAction="#handleAdd">
+        <tooltip>
+            <Tooltip text="%add_new_book"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@../imgs/Add24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button onAction="#handleEdit">
+        <tooltip>
+            <Tooltip text="%edit_selected_book"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@../imgs/Edit24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button onAction="#handleDelete">
+        <tooltip>
+            <Tooltip text="%delete_selected_book"/>
+        </tooltip>
+        <graphic>
+            <ImageView>
+                <Image url="@../imgs/Delete24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+</VBox>

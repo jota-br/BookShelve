@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<VBox xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="ostrovski.joao.ui.ControllerTopBar" fx:id="topBarControllerVbox">
+    <AnchorPane>
+        <MenuBar styleClass="topMenuBar" AnchorPane.leftAnchor="0.0">
+            <Menu text="Menu">
+                <items>
+                    <MenuItem text="%Home" onAction="#home" styleClass="topMenuItem"/>
+                    <MenuItem fx:id="menuItemLogin" text="%Login" onAction="#login" styleClass="topMenuItem"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="%Exit" onAction="#handleExit" styleClass="topMenuItem"/>
+                </items>
+            </Menu>
+        </MenuBar>
+        <ChoiceBox fx:id="themeSelector" AnchorPane.rightAnchor="0.0" onAction="#changeTheme">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="nord-light"/>
+                </FXCollections>
+            </items>
+            <value>
+                <String fx:value="nord-light"/>
+            </value>
+        </ChoiceBox>
+    </AnchorPane>
+    <AnchorPane>
+        <TextField promptText="%press_enter_to_search" fx:id="searchBar" onKeyPressed="#searchData" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="110"/>
+        <ChoiceBox fx:id="searchBoxSelector" AnchorPane.rightAnchor="0.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Book"/>
+                    <String fx:value="Author"/>
+                    <String fx:value="Category"/>
+                    <String fx:value="Publisher"/>
+                </FXCollections>
+            </items>
+            <value>
+                <String fx:value="Book"/>
+            </value>
+        </ChoiceBox>
+    </AnchorPane>
+</VBox>

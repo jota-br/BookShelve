@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ostrovski.joao.ui.ControllerDetailedView" styleClass="detailedView" >
+    <VBox fx:id="bookFields" VBox.vgrow="ALWAYS">
+        <Label fx:id="bookTitleField" styleClass="labelTitle" />
+    </VBox>
+    <VBox fx:id="publishersField" VBox.vgrow="ALWAYS">
+        <Separator/>
+    </VBox>
+    <VBox fx:id="authorsField" VBox.vgrow="ALWAYS">
+        <Separator/>
+    </VBox>
+</VBox>
