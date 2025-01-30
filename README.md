@@ -26,15 +26,10 @@ This is a Bookshelve application developed using Java 17 and JavaFX 17, with Mar
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
    ```sh
    git clone https://github.com/jota-br/bookshelf.git
    ```
-2. Navigate to the project directory:
-   ```sh
-   cd bookshelf
-   ```
-3. Add the necessary dependencies to your `pom.xml` or `build.gradle` file for JavaFX, MariaDB, and Hibernate.
 
 ### Configuration
 
