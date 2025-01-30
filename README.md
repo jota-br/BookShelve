@@ -1,7 +1,5 @@
 # Bookshelve Project
 
-This is a Bookshelve application developed using Java 17 and JavaFX 17, with MariaDB for the database (via JDBC) and Hibernate for JPA.
-
 ## Features
 
 - **CRUD Operations**: Manage books with functionalities to Create, Read, Update, and Delete.
